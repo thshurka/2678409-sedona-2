@@ -11,7 +11,7 @@
     <header class="page-header" data-test="header">
       <div class="page-header__container">
         <a class="logo" href="index.html">
-          <img src="#" alt="Логотип Седоны" class="logo__image">
+          <img src="images/logo-sedona.svg" width="140" height="67" alt="Логотип Седоны" class="logo__image">
         </a>
 
         <nav class="navigation">
@@ -41,7 +41,7 @@
       <section class="hero" data-test="hero">
         <div class="hero__container">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <img src="#" alt="Welcome to the gorgeous Sedona" class="hero__image">
+          <img src="images/welcome.svg" width="458" height="352" alt="Надпись Welcome to the gorgeous Sedona" class="hero__image">
         </div>
       </section>
 
@@ -63,7 +63,7 @@
               <h3 class="reason__title">Седона - не аттракцион для туристов, там течёт своя жизнь</h3>
               <p class="reason__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="#" alt="Местная жизнь в Седоне" class="reason__image">
+            <img src="images/index-advantages-1.jpg" width="800" height="384" alt="Местная жизнь в городе Седона" class="reason__image">
           </article>
 
           <!-- Три преимущества в ряд -->
@@ -84,7 +84,7 @@
 
           <!-- Причина 2: Мост Дьявола с фото -->
           <article class="reason reason--featured reason--reverse">
-            <img src="#" alt="Мост Дьявола" class="reason__image">
+            <img src="images/index-advantages-2.jpg" width="800" height="384" alt="Породное арочное геологическое останце" class="reason__image">
             <div class="reason__content">
               <h3 class="reason__title">Там есть Мост Дьявола</h3>
               <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -94,14 +94,17 @@
           <!-- Три преимущества: жильё, еда, сувениры -->
           <ul class="reasons__list">
             <li class="reason-card">
+              <img src="images/advantages-housing.svg" width="75" height="72" alt="" class="reason-card__icon">
               <h3 class="reason-card__title">Жильё</h3>
               <p class="reason-card__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="reason-card">
+              <img src="images/advantages-food.svg" width="75" height="72" alt="" class="reason-card__icon">
               <h3 class="reason-card__title">Еда</h3>
               <p class="reason-card__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="reason-card">
+              <img src="images/advantages-souvenirs.svg" width="75" height="72" alt="" class="reason-card__icon">
               <h3 class="reason-card__title">Сувениры</h3>
               <p class="reason-card__text">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -183,7 +186,9 @@
           <legend class="visually-hidden">Количество взрослых</legend>
           <label class="search-form__label" for="adults-count">Взрослые:</label>
           <div class="number-input">
-            <button class="number-input__button" type="button" aria-label="Уменьшить количество взрослых">−</button>
+            <button class="number-input__button" type="button" aria-label="Уменьшить количество взрослых">
+              <img src="images/minus.svg" width="12" height="3" alt="">
+            </button>
             <input
               class="number-input__input"
               type="number"
@@ -192,7 +197,9 @@
               min="1"
               value="2"
             >
-            <button class="number-input__button" type="button" aria-label="Увеличить количество взрослых">+</button>
+            <button class="number-input__button" type="button" aria-label="Увеличить количество взрослых">
+              <img src="images/plus.svg" width="12" height="12" alt="">
+            </button>
           </div>
         </fieldset>
 
@@ -204,7 +211,9 @@
             <span class="search-form__hint">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
           </label>
           <div class="number-input">
-            <button class="number-input__button" type="button" aria-label="Уменьшить количество детей">−</button>
+            <button class="number-input__button" type="button" aria-label="Уменьшить количество детей">
+              <img src="images/minus.svg" width="12" height="3" alt="">
+            </button>
             <input
               class="number-input__input"
               type="number"
@@ -213,7 +222,9 @@
               min="0"
               value="0"
             >
-            <button class="number-input__button" type="button" aria-label="Увеличить количество детей">+</button>
+            <button class="number-input__button" type="button" aria-label="Увеличить количество детей">
+              <img src="images/plus.svg" width="12" height="12" alt="">
+            </button>
           </div>
         </fieldset>
 
@@ -236,16 +247,25 @@
           <ul class="social-links">
             <li class="social-links__item">
               <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">
+                <svg class="social-link__icon" width="24" height="24" aria-hidden="true">
+                  <use href="images/social-vk.svg#icon"></use>
+                </svg>
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-links__item">
               <a class="social-link social-link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social-link__icon" width="24" height="24" aria-hidden="true">
+                  <use href="images/social-telegram.svg#icon"></use>
+                </svg>
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="social-links__item">
               <a class="social-link social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-link__icon" width="24" height="24" aria-hidden="true">
+                  <use href="images/social-youtube.svg#icon"></use>
+                </svg>
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
@@ -262,7 +282,10 @@
         <section class="footer-section footer-section--developer">
           <h2 class="visually-hidden">Разработчик</h2>
           <a class="developer-link" href="https://htmlacademy.ru/">
-            <img src="#" alt=".html academy" class="developer-link__logo">
+            <svg class="developer-link__logo" width="115" height="41" aria-hidden="true">
+              <use href="images/logo-sedona.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">.html academy</span>
           </a>
         </section>
       </div>
