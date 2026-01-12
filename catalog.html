@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="navigation">
         <div class="navigation-with-logo">
           <img class="sedona-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны.">
@@ -41,7 +41,7 @@
       </nav>
     </header>
 
-    <main class="main-container">
+    <main class="main-container" data-test="main">
       <div class="inner-page-container">
         <div class="inner-block-container">
           <section class="inner-header">
@@ -61,7 +61,7 @@
                 </li>
               </ul>
             </div>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <div class="catalog-filter-living">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </section>
-          <section class="catalog-hotels">
+          <section class="catalog-hotels" data-test="catalog">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <ul class="catalog-hotels-list">
               <li class="hotel-card">
@@ -257,7 +257,7 @@
         </section>
       </div>
 
-      <section class="subscribe-block subscribe-block-background">
+      <section class="subscribe-block subscribe-block-background" data-test="subscribe">
           <h2 class="visually-hidden">Подписаться на рассылку</h2>
           <div class="subscribe-block-text">
             <p class="big-text">Подпишитесь на рассылку</p>
@@ -271,7 +271,7 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="page-footer-container">
         <ul class="footer-social-list">
           <li>

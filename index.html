@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="navigation">
         <div class="navigation-with-logo">
           <img class="sedona-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны.">
@@ -45,10 +45,10 @@
     </header>
 
 
-    <main class="main-container">
+    <main class="main-container" data-test="main">
       <div class="page-container">
         <h1 class="visually-hidden">SEDONA</h1>
-        <section class="welcome-block">
+        <section class="welcome-block" data-test="hero">
           <img class="text-logo" src="images/welcome.svg" width="458" height="352" alt="Крупный представительный текст.">
         </section>
         <section class="sedona-description">
@@ -57,7 +57,7 @@
             заслуживающий большего!</p>
           <p class="small-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
             <li class="advantages-item blue-1">
@@ -118,7 +118,7 @@
             </li>
           </ul>
         </section>
-        <section class="search-hotel-block">
+        <section class="search-hotel-block" data-test="search">
           <h2 class="visually-hidden">Привлечение к целевому действию</h2>
           <p class="big-text">Заинтересовались?</p>
           <div class="small-text-grid">
@@ -126,7 +126,7 @@
           </div>
           <a class="button search-hotels" href="#">Поиск гостиницы в седоне</a>
         </section>
-        <section class="subscribe-block subscribe-block-background">
+        <section class="subscribe-block subscribe-block-background" data-test="subscribe">
           <h2 class="visually-hidden">Подписаться на рассылку</h2>
           <div class="subscribe-block-text">
             <p class="big-text">Подпишитесь на рассылку</p>
@@ -141,7 +141,7 @@
     </main>
 
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="page-footer-container">
         <ul class="footer-social-list">
           <li>
