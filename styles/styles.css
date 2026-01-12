@@ -52,6 +52,11 @@ body {
   min-height: 100%;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
 li {
   list-style: none;
 }
@@ -69,7 +74,9 @@ li::marker {
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
+  clip-path: inset(100%);
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .main-container {
@@ -196,6 +203,7 @@ li::marker {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -208,6 +216,7 @@ li::marker {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -275,6 +284,18 @@ li::marker {
 .social-logo,
 .htmlacademy-logo {
   display: block;
+}
+
+.social-logo {
+  filter: brightness(0);
+}
+
+.footer-social-item:hover .social-logo {
+  opacity: 0.6;
+}
+
+.footer-social-item:active .social-logo {
+  opacity: 0.3;
 }
 
 .welcome-block {
@@ -358,17 +379,17 @@ li::marker {
 }
 
 .advantages-line-blue {
-
+  width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
 }
 
 .advantages-line-grey {
-
+  width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
 }
 
 .advantages-description {
@@ -495,16 +516,22 @@ li::marker {
   justify-content: center;
   width: 48px;
   height: 40px;
-  color: #83b3d3;
+  color: #000000;
   text-decoration: none;
 }
 
-.footer-social-item:hover {
-  color: #68a2ca;
+.footer-social-item .social-icon {
+  fill: var(--color-black);
 }
 
-.footer-social-item:active {
-  color: rgba(104, 162, 202, 0.3);
+.footer-social-item:hover .social-icon {
+  fill: var(--color-black);
+  opacity: 0.6;
+}
+
+.footer-social-item:active .social-icon {
+  fill: var(--color-black);
+  opacity: 0.3;
 }
 
 .footer-telephone-container {
@@ -604,6 +631,18 @@ li::marker {
 
 .breadcrumbs-link:active {
   opacity: 0.3;
+}
+
+.breadcrumbs-home {
+  width: 13px;
+  height: 15px;
+  display: block;
+}
+
+.breadcrumbs-arrow {
+  width: 8px;
+  height: 20px;
+  display: block;
 }
 
 .breadcrumbs-link-a {
@@ -706,7 +745,7 @@ li::marker {
 }
 
 .inner-content-container {
-  padding: 50px 70px 60px;
+  padding: 70px 60px;
   width: 1200px;
   margin: 0 auto;
 }
@@ -742,7 +781,7 @@ li::marker {
 
 .display-variants {
   display: flex;
-  gap: 8px;
+  gap: 0;
 }
 
 .display-variant {
@@ -828,6 +867,12 @@ li::marker {
 .hotel-card-stars {
   display: flex;
   gap: 6px;
+}
+
+.hotel-card-star {
+  width: 18px;
+  height: 17px;
+  display: block;
 }
 
 .hotel-card-rating-number {
