@@ -23,18 +23,18 @@
             </li>
           </ul>
         </div>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="user-navigation-link" href="#">
               <img src="images/search.svg" width="44" height="64" alt="Поиск">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="user-navigation-link" href="#">
               <img src="images/favorites.svg" width="44" height="64" alt="Избранное">
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="user-navigation-item">
             <a class="button header-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -42,24 +42,25 @@
     </header>
 
     <main class="main-container">
-      <div class="page-container">
-        <section class="inner-header">
-          <div class="inner-header-container">
-            <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
-                  <img class="breadcrumbs-home" src="images/home.svg" width="13" height="15" alt="На главную.">
-                </a>
-              </li>
-              <li class="breadcrumbs-item">
-                <img class="breadcrumbs-arrow" src="images/breadcrumbs-arrow.svg" width="8" height="20" alt="Разделитель.">
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
+      <div class="inner-page-container">
+        <div class="inner-block-container">
+          <section class="inner-header">
+            <div class="inner-header-container">
+              <h1 class="inner-header-title">Гостиницы Седоны</h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <img class="breadcrumbs-home" src="images/home.svg" width="13" height="15" alt="На главную.">
+                  </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <img class="breadcrumbs-arrow" src="images/breadcrumbs-arrow.svg" width="8" height="20" alt="Разделитель.">
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link">Гостиницы</a>
+                </li>
+              </ul>
+            </div>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog-filter-living">
               <fieldset class="catalog-filter-group">
@@ -114,25 +115,32 @@
             </div>
           </form>
         </section>
-        <section class="inner-content-container">
-          <section class="catalog-settings">
-            <h2 class="visually-hidden">Настройка отображения</h2>
+      </div>
+      <div class="inner-content-container">
+        <section class="catalog-settings">
+          <h2 class="visually-hidden">Настройка отображения</h2>
+          <div>
             <p class="hotels-count">Найдено гостиниц: 38</p>
+          </div>
+          <div class="select-settings">
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <a class="display-variant display-variant-checked">
-              <img src="images/view-cards.svg" width="48" height="48" alt="Карточками.">
-            </a>
-            <a class="display-variant" href="#">
-              <img src="images/view-screen.svg" width="48" height="48" alt="На весь экран.">
-            </a>
-            <a class="display-variant" href="#">
-              <img src="images/view-list.svg" width="48" height="48" alt="Список.">
-            </a>
-          </section>
+            <div class="display-variants">
+              <a class="display-variant display-variant-checked">
+                <img class="display-icon" src="images/view-cards.svg" width="48" height="48" alt="Карточками.">
+              </a>
+              <a class="display-variant" href="#">
+                <img class="display-icon" src="images/view-screen.svg" width="48" height="48" alt="На весь экран.">
+              </a>
+              <a class="display-variant" href="#">
+                <img class="display-icon" src="images/view-list.svg" width="48" height="48" alt="Список.">
+              </a>
+            </div>
+          </div>
+        </section>
           <section class="catalog-hotels">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <ul class="catalog-hotels-list">
@@ -226,40 +234,40 @@
                 </div>
               </li>
             </ul>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link ellopsis">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-          </section>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link ellopsis">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
         </section>
+      </div>
 
-        <section class="subscribe-block subscribe-block-background">
+      <section class="subscribe-block subscribe-block-background">
           <h2 class="visually-hidden">Подписаться на рассылку</h2>
           <div class="subscribe-block-text">
             <p class="big-text">Подпишитесь на рассылку</p>
             <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required>
-            <button class="button subscribe-button" type="submit">Подписаться</button>
-          </form>
-        </section>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" type="email" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
       </div>
     </main>
 
